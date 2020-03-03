@@ -1,0 +1,6 @@
+-Boids in 2d and 3d
+-Minesweeper
+-Tic tac Toe with AI
+-Sudoku with solver
+-Everything Formula
+https://repl.it/repls/StrangeSpecializedMetrics
