@@ -41,12 +41,14 @@ class Boid:
 
     def flock(self,boids):
         self.a *=0
+        self.a += self.Seperation(boids)
         self.a += self.align(boids)
         self.a += self.cohesion(boids)
 
 
+
     def align(self,boids):
-        max_dis = 100
+        max_dis = 50
         avg = pygame.math.Vector2()
         local_pop = 0
         for boid in boids:
@@ -64,7 +66,7 @@ class Boid:
         return avg
 
     def cohesion(self, boids):
-        max_dis = 100
+        max_dis = 50
         avg_point = pygame.math.Vector2()
         local_pop = 0
         for boid in boids:
@@ -79,6 +81,25 @@ class Boid:
             limit(avg_point, self.maxForce)
 
         return avg_point
+
+    def Seperation(self, boids):
+        max_dis = 50
+        avg_point = pygame.math.Vector2()
+        local_pop = 0
+        for boid in boids:
+            d = math.dist((self.pos.x, self.pos.y), (boid.pos.x, boid.pos.y))
+            if d < max_dis and boid != self:
+                dif = self.pos - boid.pos
+                dif /= d
+                avg_point += dif
+                local_pop += 1
+        if local_pop > 0:
+            avg_point /= local_pop
+            avg_point -= self.v
+            limit(avg_point, self.maxForce)
+
+        return avg_point
+
 
 crashed = False
 flock = [Boid() for i in range(50)]
