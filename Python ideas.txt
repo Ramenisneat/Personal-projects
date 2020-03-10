@@ -4,3 +4,4 @@
 -Sudoku with solver
 -Everything Formula
 https://repl.it/repls/StrangeSpecializedMetrics
+-Floyd Steinberg Dithering o a movie clip

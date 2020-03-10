@@ -96,7 +96,7 @@ class Boid:
         if local_pop > 0:
             avg_point /= local_pop
             avg_point -= self.v
-            limit(avg_point, self.maxForce)
+
 
         return avg_point
 
