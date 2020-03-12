@@ -37,7 +37,7 @@ def calPoints(n):
     for i in range(n):
         x = radius + radius * math.sin(angle)
         y = radius + radius * math.cos(angle)
-        points.append((x, y))
+        points.append((round(x), round(y)))
         angle += t
 
 
@@ -66,7 +66,7 @@ while not crashed:
     Display.fill((255, 255, 255))
     pygame.draw.circle(Display, (0, 0, 0), (radius, radius), radius, 2)
     for p in points:
-        pygame.draw.circle(Display, (0, 0, 0), p, 3, 2)
+        pygame.draw.circle(Display, (0, 0, 0),p, 3, 2)
 
     for i in range(len(points)):
         index = math.floor((i * factor) % n)

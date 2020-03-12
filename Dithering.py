@@ -4,7 +4,7 @@ from numba import jit
 
 @jit
 def Dither(img):
-    for i in range(2):
+    for i in range(3):
         for x in range(len(img) - 1):
             for y in range(len(img[0]) - 1):
                 prev = img[x][y][i]
@@ -17,13 +17,14 @@ def Dither(img):
                 img[x + 1][y + 1][i] += quant * 1 / 16
     return img
 
+
 def main():
     # parser = argparse.ArgumentParser()
     # parser.add_argument("f",type=str,default ="dogs.jpg",help="file name; image to be dithered")
     # parser.add_argument("c",type=str,default ="LA",help="color mode of output; RGB;LA for greyscale")
     # args = parser.parse_args()
 
-    img = Image.open("dogs.jpg").convert("LA")  # args.f).convert(args.c)
+    img = Image.open("cat.jfif")#.convert("LA")  # args.f).convert(args.c)
     img = np.array(img)
     print("shape {}".format(img.shape))
     img = Dither(img)
