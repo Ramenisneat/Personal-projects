@@ -295,7 +295,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Boids stuff pt 1" />
     <MESSAGE value="Boids stuff pt 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boids stuff pt 2" />
+    <MESSAGE value="Dithering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dithering" />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="54" key="#Tree" timestamp="1584036267605">
@@ -310,10 +311,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="507" y="223" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1584049471609" />
-    <state x="436" y="12" key="CommitChangelistDialog2" timestamp="1583698296478">
+    <state x="436" y="12" key="CommitChangelistDialog2" timestamp="1584050829907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="436" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583698296478" />
+    <state x="436" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584050829907" />
     <state x="548" y="190" key="FileChooserDialogImpl" timestamp="1584036386817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -358,10 +359,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="663" y="211" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584039752025" />
-    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584050759015">
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584050904270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1584050759015" />
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1584050904270" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584038622856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
